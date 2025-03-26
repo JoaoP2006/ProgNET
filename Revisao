@@ -1,32 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-    img{
-        width: 100px;
-    }
-
-
+        img {
+            width: 100px;
+        }
+        table, td, caption, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+        }
     </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
 </head>
 <body>
-    <h1>Titulos h1</h1>
-    <h2>Titulos  h2</h2>
-    <p>paragrafo</p>
-    <p>paragrafo2</p>
-    <span> <sup>mlinhaKKKK</sup></span>
+    <h1>Títulos de h1 até h6</h1>
+
+    <p>Parágrafo 1</p>          
+    <p>Parágrafo 2</p>
+    <span>Texto 1</span>
+    <span>Texto 2</span>
+
     <div>
-        <img src="" alt="">
+        <img src="goku.jpg" alt="Goku">
+        <span>Goku</span>
         <input type="color">
         <input type="text">
-        <input type="number">
+        <input type="date">
         <input type="checkbox">
-        <p>minha caixa</p>
 
+        <h2>Lista não ordenada</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+
+        <h3>Lista ordenada</h3>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ol>
+
+        <h4>Tabela em HTML</h4>
+        <p>Table define a tabela</p>
+        <p>tr - row define uma linha de tabela</p>
+        <p>td - data define uma célula</p>
+        <p>caption define uma tabela</p>
+        <p>th define célula de nome de colunas</p>
+
+        <table>
+            <caption>Tabela</caption>
+            <tr>
+                <th rowspan="2">Itens</th>
+                <th>1x2</th>
+                <th>1x3</th>
+                <th>1x2</th>
+            </tr>
+            <tr>
+                <td>2x2</td>
+                <td>2x3</td>
+                <td>2x2</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>3x2</td>
+            </tr>
+        </table>
+
+        <p>Minha caixinha</p>
+        <p>Minha caixinha</p>
     </div>
-    
+
 </body>
 </html>

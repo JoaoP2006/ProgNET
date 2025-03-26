@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    img{
+        width: 100px;
+    }
+
+
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1>Titulos h1</h1>
+    <h2>Titulos  h2</h2>
+    <p>paragrafo</p>
+    <p>paragrafo2</p>
+    <span> <sup>mlinhaKKKK</sup></span>
+    <div>
+        <img src="" alt="">
+        <input type="color">
+        <input type="text">
+        <input type="number">
+        <input type="checkbox">
+        <p>minha caixa</p>
+
+    </div>
+    
+</body>
+</html>

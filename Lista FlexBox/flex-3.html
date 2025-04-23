@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personagens</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #bdbdbd;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .user img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+
+    .user-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-info strong {
+      font-size: 14px;
+    }
+
+    .user-info span {
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="user">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/MarioNSMBUDeluxe.png" alt="Mario">
+      <div class="user-info">
+        <strong>Mario</strong>
+        <span>Reino do Cogumelo</span>
+      </div>
+    </div>
+    <div class="user">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Link_SSBU.png" alt="Link">
+      <div class="user-info">
+        <strong>Link</strong>
+        <span>Hyrule</span>
+      </div>
+    </div>
+    <div class="user">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Donkey_Kong_character.png" alt="Donkey Kong">
+      <div class="user-info">
+        <strong>Donkey Kong</strong>
+        <span>Ilha DK</span>
+      </div>
+    </div>
+    <div class="user">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jair_Bolsonaro_2022.jpg/440px-Jair_Bolsonaro_2022.jpg" alt="Jair Bolsonaro">
+      <div class="user-info">
+        <strong>Jair Bolsonaro</strong>
+        <span>Rio das Pedras, RJ</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

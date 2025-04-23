@@ -1,49 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <style>
-        .container{
-            width: 50vh;
-            height: 100svh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-        }
+  <meta charset="UTF-8">
+  <title>Layout Reconstruído</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
 
-        .p{
-            margin-top: 1rem;
-            background-color: lightblue;
-            height: 1rem;
-            width: 80%;
-            border-radius: 8px;
+    .container {
+      width: 250px;
+      height: 500px;
+      border: 2px solid magenta;
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-        }
-        .circulo{
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-        }
+    .logo {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 10px;
+    }
 
+    .line {
+      width: 100%;
+      height: 12px;
+      background-color: #e0e0e0;
+      border-radius: 3px;
+      margin: 8px 0;
+    }
 
- 
+    .circle {
+      width: 50px;
+      height: 50px;
+      background-color: #e0e0e0;
+      border-radius: 50%;
+    }
 
-
-    </style>
-    
-     
-
-
-    <title>Document</title>
+    .button {
+      width: 80px;
+      height: 14px;
+      background-color: #e0e0e0;
+      border-radius: 3px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-     <div class="circulo">
-</div>
-
-<div class="main"></div>
-
-
-     
+  <div class="container">
+    <div class="logo">Company Logo</div>
+    <div>
+      <div class="line">  </div>
+      <div class="line">  </div>
+      <div class="line">  </div>
+      <div class="line">  </div>
+    </div>
+    <div style="text-align: center;">
+      <div class="circle"></div>
+      <div class="button"></div>
+    </div>
+  </div>
 </body>
 </html>

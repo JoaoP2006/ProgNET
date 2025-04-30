@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+      
+    }
+
+    .container {
+       
+      display: flex;
+      width: 90%;
+      height: 300px;
+      gap: 10px;
+    }
+
+    .card {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      border-radius: 30px;
+      
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      flex: 3;
+    }
+
+    .icon {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text-content {
+      position: absolute;
+      bottom: 10px;
+      left: 50px;
+      color: white;
+      
+      opacity: 0;
+     
+    }
+
+    .card:hover .text-content {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" style="background-image: url('https://picsum.photos/id/1011/400/300');">
+      <div class="icon">🚶</div>
+    </div>
+    <div class="card" style="background-image: url('https://picsum.photos/id/1015/400/300');">
+      <div class="icon">🌲</div>
+      <div class="text-content">
+        <p><strong>aaaaa</strong></p>
+        <p>aaaaa</p>
+      </div>
+    </div>
+    <div class="card" style="background-image: url('https://picsum.photos/id/1012/400/300');">
+      <div class="icon">🌲</div>
+    </div>
+    <div class="card" style="background-image: url('https://picsum.photos/id/1016/400/300');">
+      <div class="icon">🟢</div>
+    </div>
+    <div class="card" style="background-image: url('https://picsum.photos/id/1025/400/300');">
+      <div class="icon">❄️</div>
+    </div>
+  </div>
+</body>
+</html>

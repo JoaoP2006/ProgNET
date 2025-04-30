@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .container {
+      position: relative;
+      background: linear-gradient(to bottom, #B0E0E6, #87CEFA, #4682B4, #1E3F66);
+      border: 2px solid black;
+      height: 100lvh;
+      width: 200lvh;
+      overflow: hidden;
+    }
+
+    .mar {
+      position: absolute;
+      height: 25lvh;
+      width: 100%;
+      background: linear-gradient(to bottom, #A0E7E5, #40BFC1, #0077B6, #001F3F);
+      bottom: 0;
+    }
+
+    .nuvem {
+      background-color: whitesmoke;
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      height: 250px;
+      width: 500px;
+      border-radius: 60px;
+      box-shadow: 10px 5px 5px black;
+      animation: flutuar 3s ease-in-out infinite;
+    }
+
+    .nuvem2 {
+      background-color: whitesmoke;
+      position: absolute;
+      top: 50px;
+      left: 200px;
+      height: 100px;
+      width: 250px;
+      border-radius: 60px;
+      box-shadow: 10px 5px 5px black;
+      animation: flutuar 3s ease-in-out infinite;
+    }
+    @keyframes flutuar {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+    
+
+    .barco {
+      position: absolute;
+      background-image: url('barco.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 150px;
+      height: 150px;
+      bottom: 20lvh; 
+      right: 100px;
+      z-index: 10;
+      animation: flutuar 3s ease-in-out infinite;
+      
+    }
+  </style>
+  <title>Mar com Barco</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="mar"></div>
+    <div class="nuvem">
+      <div class="nuvem2"></div>
+    </div>
+    <div class="barco"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout com divs e Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "nav content"
+        "footer footer";
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #e91e63;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color: #cddc39;
+      padding: 1rem;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: #ffcc80;
+      padding: 1rem;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #009688;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="nav">Nav</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+  </div>
+
+</body>
+</html>

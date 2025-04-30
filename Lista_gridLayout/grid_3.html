@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Responsivo com Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "banner"
+        "left"
+        "main"
+        "right"
+        "low"
+        "footer";
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 10px;
+      height: 100vh;
+    }
+
+    .header { grid-area: header; background: orange; padding: 1rem; text-align: center; }
+    .banner { grid-area: banner; background: red; padding: 1rem; text-align: center; }
+    .left   { grid-area: left; background: green; padding: 1rem; text-align: center; }
+    .main   { grid-area: main; background: royalblue; padding: 2rem; text-align: center; color: white; }
+    .right  { grid-area: right; background: gold; padding: 1rem; text-align: center; }
+    .low    { grid-area: low; background: lightgreen; padding: 1rem; text-align: center; }
+    .footer { grid-area: footer; background: deepskyblue; padding: 1rem; text-align: center; }
+
+    /* Layout desktop */
+    @media screen and (min-width: 800px) {
+      .container {
+        grid-template-areas:
+          "header  header  header"
+          "left    banner  right"
+          "left    main    right"
+          "left    low     right"
+          "footer  footer  footer";
+        grid-template-columns: 150px 1fr 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="banner">Banner</div>
+    <div class="left">Left Aside</div>
+    <div class="main">Main Content</div>
+    <div class="right">Right Aside</div>
+    <div class="low">Low Content</div>
+    <div class="footer">Footer</div>
+  </div>
+
+</body>
+</html>

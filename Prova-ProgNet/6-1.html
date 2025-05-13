@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatório de Vendas dos Imóveis</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #4dccff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #eeeeee;
+      padding: 30px;
+      border-radius: 5px;
+      width: 90%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .cell {
+      flex: 1;
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .header .cell {
+      background-color: #f3f3f3;
+      font-weight: bold;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .sair-btn {
+      background-color: #ee0707;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .sair-btn:hover {
+      background-color: #e76666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">RELATÓRIO DE VENDAS DOS IMÓVEIS</div>
+
+    <div class="table">
+      
+      <div class="row header">
+        <div class="cell">ID do imóvel</div>
+        <div class="cell">Cidade</div>
+        <div class="cell">Data de cadastro</div>
+        <div class="cell">Valor</div>
+      </div>
+
+      
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+      <div class="row"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>
+    </div>
+
+    <div class="footer">
+      <button class="sair-btn">Sair</button>
+    </div>
+  </div>
+</body>
+</html>

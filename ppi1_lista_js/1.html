@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O que é JavaScript ? </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O que é JavaScript?</title>
 </head>
 <body>
 
-    <h1>O que é JavaScript ? </h1>
+  <h1 id="titulo">O que é JavaScript?</h1>
 
-    <p></p>
-    
-    
+  <p id="motivacao">
+    JavaScript foi criado em 1995 por Brendan Eich, enquanto trabalhava na Netscape Communications Corporation. A motivação principal era adicionar interatividade às páginas web, permitindo que os navegadores respondessem a ações do usuário sem a necessidade de recarregar a página :contentReference[oaicite:0]{index=0}.
+  </p>
+
+  <p id="execucao">
+    A diferença entre execução no navegador e no servidor está no local onde o código é executado. No navegador (lado do cliente), o JavaScript é executado diretamente no computador do usuário, permitindo interações rápidas e dinâmicas. No servidor (lado do servidor), o JavaScript é executado em servidores web, processando dados e gerando conteúdo antes de enviá-lo ao cliente :contentReference[oaicite:1]{index=1}.
+  </p>
+
+  <p id="sandbox">
+    O conceito de "sandbox" no navegador refere-se a um ambiente isolado onde o código JavaScript é executado. Isso significa que o código tem acesso restrito aos recursos do sistema, aumentando a segurança ao evitar que scripts maliciosos acessem ou modifiquem dados sensíveis :contentReference[oaicite:2]{index=2}.
+  </p>
+
+  <p id="objetos-globais">
+    Alguns objetos globais importantes em JavaScript incluem:
+    <ul>
+      <li><code>document</code>: Representa o conteúdo da página web e permite manipulá-lo.</li>
+      <li><code>console</code>: Usado para exibir informações no console do navegador, útil para depuração.</li>
+      <li><code>alert()</code>: Exibe uma caixa de diálogo com uma mensagem para o usuário.</li>
+    </ul>
+  </p>
+
+  <script>
+    alert("Bem-vindo ao tutorial sobre JavaScript!");
+
+    console.log("Página carregada com sucesso!");
+
+    const dataAtual = new Date();
+    const horaAtual = dataAtual.toLocaleTimeString();
+    document.getElementById("hora").innerHTML = "Hora atual: " + horaAtual;
+  </script>
+
+  <p id="hora"></p>
+
 </body>
 </html>

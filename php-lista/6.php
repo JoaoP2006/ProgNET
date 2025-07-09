@@ -17,7 +17,6 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $numero = intval($_POST['numero']);
 
-        // Verifica se o número é par ou ímpar
         if ($numero % 2 == 0) {
             $resultado = "Par";
         } else {

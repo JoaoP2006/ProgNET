@@ -19,15 +19,12 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Recebe os valores do formulário
         $min = intval($_POST['min']);
         $max = intval($_POST['max']);
 
-        // Validação básica para garantir que min <= max
         if ($min > $max) {
             echo "<p style='color:red;'>Erro: o valor mínimo deve ser menor ou igual ao máximo.</p>";
         } else {
-            // Gera o número aleatório
             $sorteado = rand($min, $max);
             echo "<p>🎉 Número sorteado entre $min e $max: <strong>$sorteado</strong></p>";
         }

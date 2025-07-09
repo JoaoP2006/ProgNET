@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Se já estiver logado, redireciona para a página principal
 if (isset($_SESSION['usuario'])) {
     header('Location: principal.php');
     exit;
@@ -13,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $usuario = $_POST['usuario'] ?? '';
     $senha = $_POST['senha'] ?? '';
 
-    // Usuário e senha fixos
     if ($usuario === 'admin' && $senha === '1234') {
         $_SESSION['usuario'] = $usuario;
         header('Location: principal.php');

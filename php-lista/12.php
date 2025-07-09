@@ -1,12 +1,9 @@
 <?php
 function calcularArray($numeros) {
-    // Soma todos os números
     $soma = array_sum($numeros);
 
-    // Encontra o maior número
     $maior = max($numeros);
 
-    // Encontra o menor número
     $menor = min($numeros);
 
     return [
@@ -16,7 +13,6 @@ function calcularArray($numeros) {
     ];
 }
 
-// Exemplo de uso:
 $meuArray = [3, 7, 2, 9, 4];
 
 $resultado = calcularArray($meuArray);
